@@ -1,0 +1,37 @@
+Fri Dec  8 12:19:29 EST 2017
+plotbase: /home/mhl/public_html/2017/20171207_cscSeg/2017C_expandStripPattern_addMoreWirePattern_useAddBack/
+Fri Dec  8 12:28:57 EST 2017
+Fri Dec  8 12:30:04 EST 2017
+run UFCSCRootMaker on UF seg
+Fri Dec  8 12:30:45 EST 2017
+run UFCSCRootMaker on RU seg
+Fri Dec  8 12:32:19 EST 2017
+seg_uf_0_ru_1_ME11 plots done
+Fri Dec  8 12:34:56 EST 2017
+seg_uf_1_ru_0_ME11 plots done
+Fri Dec  8 12:36:31 EST 2017
+seg_uf_1_ru_2_ME11 plots done
+Fri Dec  8 12:37:35 EST 2017
+seg_uf_2_ru_1_ME11 plots done
+Fri Dec  8 12:38:53 EST 2017
+seg_uf_4_ru_4_ME11 plots done
+Fri Dec  8 12:40:15 EST 2017
+rh_uf_5_ru_6_ME11 plots done
+Fri Dec  8 12:41:55 EST 2017
+rh_uf_6_ru_5_ME11 plots done
+Fri Dec  8 12:42:44 EST 2017
+seg_uf_0_ru_1_nonME11 plots done
+Fri Dec  8 12:43:59 EST 2017
+seg_uf_1_ru_0_nonME11 plots done
+Fri Dec  8 12:46:02 EST 2017
+seg_uf_1_ru_2_nonME11 plots done
+Fri Dec  8 12:47:04 EST 2017
+seg_uf_2_ru_1_nonME11 plots done
+Fri Dec  8 12:48:25 EST 2017
+seg_uf_4_ru_4_nonME11 plots done
+Fri Dec  8 12:50:21 EST 2017
+rh_uf_5_ru_6_nonME11 plots done
+Fri Dec  8 12:51:28 EST 2017
+rh_uf_6_ru_5_nonME11 plots done
+Fri Dec  8 12:51:28 EST 2017
+all done !

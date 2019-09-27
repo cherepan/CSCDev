@@ -1,0 +1,309 @@
+139c139
+< #include "TSystem.h"
+---
+> 
+236,243c236,242
+< /*
+<   float avgInstantLumi;
+<   float rawbxlumi;
+<   float correctedAvgInstantLumi;
+<   float bx_B1[3564];
+<   float bx_B2[3564];
+<   float bx_LUMI[3564];  
+< */
+---
+>   double avgInstantLumi;
+>   double rawbxlumi;
+>   double correctedAvgInstantLumi;
+>   double bx_B1[3564];
+>   double bx_B2[3564];
+>   double bx_LUMI[3564];  
+> 
+275c274
+<   float    muons_calEnergyTower[1000], muons_calEnergyEm[1000], muons_calEnergyHad[1000];
+---
+>   double    muons_calEnergyTower[1000], muons_calEnergyEm[1000], muons_calEnergyHad[1000];
+277,280c276,279
+<   float    muons_energy[1000],  muons_px[1000], muons_py[1000], muons_pz[1000], muons_pt[1000];
+<   float    muons_et[1000], muons_p[1000], muons_phi[1000], muons_eta[1000], muons_theta[1000];
+<   float    muons_vx[1000], muons_vy[1000], muons_vz[1000];
+<   float    muons_globalTrackNormalizedChi2[1000];
+---
+>   double    muons_energy[1000],  muons_px[1000], muons_py[1000], muons_pz[1000], muons_pt[1000];
+>   double    muons_et[1000], muons_p[1000], muons_phi[1000], muons_eta[1000], muons_theta[1000];
+>   double    muons_vx[1000], muons_vy[1000], muons_vz[1000];
+>   double    muons_globalTrackNormalizedChi2[1000];
+282,291c281,290
+<   float    muons_isoNH04[1000], muons_isoCH04[1000], muons_isoPhot04[1000], muons_isoPU04[1000];
+<   float    muons_isoNH03[1000], muons_isoCH03[1000], muons_isoPhot03[1000], muons_isoPU03[1000];
+<   float    muons_dxy[1000], muons_dz[1000];
+<   std::vector< std::vector<float> > muons_cscSegmentRecord_nRecHits;
+<   std::vector< std::vector<float> > muons_cscSegmentRecord_ring;
+<   std::vector< std::vector<float> > muons_cscSegmentRecord_station;
+<   std::vector< std::vector<float> > muons_cscSegmentRecord_chamber;
+<   std::vector< std::vector<float> > muons_cscSegmentRecord_endcap;
+<   std::vector< std::vector<float> > muons_cscSegmentRecord_localY;
+<   std::vector< std::vector<float> > muons_cscSegmentRecord_localX;
+---
+>   double    muons_isoNH04[1000], muons_isoCH04[1000], muons_isoPhot04[1000], muons_isoPU04[1000];
+>   double    muons_isoNH03[1000], muons_isoCH03[1000], muons_isoPhot03[1000], muons_isoPU03[1000];
+>   double    muons_dxy[1000], muons_dz[1000];
+>   std::vector< std::vector<double> > muons_cscSegmentRecord_nRecHits;
+>   std::vector< std::vector<double> > muons_cscSegmentRecord_ring;
+>   std::vector< std::vector<double> > muons_cscSegmentRecord_station;
+>   std::vector< std::vector<double> > muons_cscSegmentRecord_chamber;
+>   std::vector< std::vector<double> > muons_cscSegmentRecord_endcap;
+>   std::vector< std::vector<double> > muons_cscSegmentRecord_localY;
+>   std::vector< std::vector<double> > muons_cscSegmentRecord_localX;
+297,298c296,297
+<   float    tracks_px[2000], tracks_py[2000], tracks_pz[2000];
+<   float    tracks_pt[2000], tracks_p[2000], tracks_eta[2000], tracks_phi[2000];
+---
+>   double    tracks_px[2000], tracks_py[2000], tracks_pz[2000];
+>   double    tracks_pt[2000], tracks_p[2000], tracks_eta[2000], tracks_phi[2000];
+303c302
+<   float simHits_localX[10000], simHits_localY[10000], simHits_globalX[10000], simHits_globalY[10000];
+---
+>   double simHits_localX[10000], simHits_localY[10000], simHits_globalX[10000], simHits_globalY[10000];
+306c305
+<   float simHits_momentum[10000], simHits_phi[10000], simHits_theta[10000];
+---
+>   double simHits_momentum[10000], simHits_phi[10000], simHits_theta[10000];
+311,316c310,315
+<   float    recHits2D_localX[10000], recHits2D_localY[10000];
+<   float    recHits2D_localXXerr[10000], recHits2D_localYYerr[10000], recHits2D_localXYerr[10000];
+<   float    recHits2D_stripPosition[10000], recHits2D_stripError[10000];
+<   float    recHits2D_SumQ[10000], recHits2D_SumQSides[10000];
+<   float    recHits2D_Time[10000];
+<   float    recHits2D_globalX[10000], recHits2D_globalY[10000], recHits2D_ADCSignal[10000];
+---
+>   double    recHits2D_localX[10000], recHits2D_localY[10000];
+>   double    recHits2D_localXXerr[10000], recHits2D_localYYerr[10000], recHits2D_localXYerr[10000];
+>   double    recHits2D_stripPosition[10000], recHits2D_stripError[10000];
+>   double    recHits2D_SumQ[10000], recHits2D_SumQSides[10000];
+>   double    recHits2D_Time[10000];
+>   double    recHits2D_globalX[10000], recHits2D_globalY[10000], recHits2D_ADCSignal[10000];
+319c318
+<   float    recHits2D_simHit_localX[10000], recHits2D_simHit_localY[10000];
+---
+>   double    recHits2D_simHit_localX[10000], recHits2D_simHit_localY[10000];
+321,323c320,322
+<   float    recHits2D_localStripWireIntersectionX[10000], recHits2D_localStripWireIntersectionY[10000], recHits2D_localStripWireGroupIntersectionX[10000];
+<   float    recHits2D_localStripWireGroupIntersectionY[10000], recHits2D_stripWidthAtHit[10000];
+<   float    recHits2D_positionWithinStrip[10000], recHits2D_wireTime[10000];
+---
+>   double    recHits2D_localStripWireIntersectionX[10000], recHits2D_localStripWireIntersectionY[10000], recHits2D_localStripWireGroupIntersectionX[10000];
+>   double    recHits2D_localStripWireGroupIntersectionY[10000], recHits2D_stripWidthAtHit[10000];
+>   double    recHits2D_positionWithinStrip[10000], recHits2D_wireTime[10000];
+329,331c328,330
+<   float    cscSegments_localX[10000], cscSegments_localY[10000], cscSegments_globalX[10000], cscSegments_globalY[10000];
+<   float    cscSegments_globalTheta[10000], cscSegments_globalPhi[10000];
+<   float    cscSegments_localTheta[10000], cscSegments_chi2[10000], cscSegments_nRecHits[10000];
+---
+>   double    cscSegments_localX[10000], cscSegments_localY[10000], cscSegments_globalX[10000], cscSegments_globalY[10000];
+>   double    cscSegments_globalTheta[10000], cscSegments_globalPhi[10000];
+>   double    cscSegments_localTheta[10000], cscSegments_chi2[10000], cscSegments_nRecHits[10000];
+334,341c333,340
+<   float    cscSegments_distToIP[10000], cscSegments_segmentTime[10000];
+<   std::vector< std::vector<float> > cscSegments_recHitRecord_endcap;
+<   std::vector< std::vector<float> > cscSegments_recHitRecord_ring;
+<   std::vector< std::vector<float> > cscSegments_recHitRecord_station;
+<   std::vector< std::vector<float> > cscSegments_recHitRecord_chamber;
+<   std::vector< std::vector<float> > cscSegments_recHitRecord_layer;
+<   std::vector< std::vector<float> > cscSegments_recHitRecord_localY;
+<   std::vector< std::vector<float> > cscSegments_recHitRecord_localX;
+---
+>   double    cscSegments_distToIP[10000], cscSegments_segmentTime[10000];
+>   std::vector< std::vector<double> > cscSegments_recHitRecord_endcap;
+>   std::vector< std::vector<double> > cscSegments_recHitRecord_ring;
+>   std::vector< std::vector<double> > cscSegments_recHitRecord_station;
+>   std::vector< std::vector<double> > cscSegments_recHitRecord_chamber;
+>   std::vector< std::vector<double> > cscSegments_recHitRecord_layer;
+>   std::vector< std::vector<double> > cscSegments_recHitRecord_localY;
+>   std::vector< std::vector<double> > cscSegments_recHitRecord_localX;
+343c342
+<   float    cscSegments_Resolution_pull[10000], cscSegments_Resolution_residual[10000];
+---
+>   double    cscSegments_Resolution_pull[10000], cscSegments_Resolution_residual[10000];
+355c354
+<   float standaloneMuons_p[10000], standaloneMuons_pt[10000];
+---
+>   double standaloneMuons_p[10000], standaloneMuons_pt[10000];
+357c356
+<   float standaloneMuons_chi2[10000], standaloneMuons_normChi2[10000];
+---
+>   double standaloneMuons_chi2[10000], standaloneMuons_normChi2[10000];
+361,362c360,361
+<   float standaloneMuons_crudeLength[10000], standaloneMuons_deltaPhi[10000];
+<   float standaloneMuons_innerGlobalPolarAngle[10000], standaloneMuons_outerGlobalPolarAngle[10000];
+---
+>   double standaloneMuons_crudeLength[10000], standaloneMuons_deltaPhi[10000];
+>   double standaloneMuons_innerGlobalPolarAngle[10000], standaloneMuons_outerGlobalPolarAngle[10000];
+369c368
+<   float firedStripDigis_ADCTotal[10000], firedStripDigis_ADCMax[10000], firedStripDigis_localX[10000];
+---
+>   double firedStripDigis_ADCTotal[10000], firedStripDigis_ADCMax[10000], firedStripDigis_localX[10000];
+376c375
+<   float firedWireDigis_localY[10000];
+---
+>   double firedWireDigis_localY[10000];
+409,415c408,414
+<   float calibrations_Gain_slope[400], calibrations_XT_slope_left[400], calibrations_XT_slope_right[400];
+<   float calibrations_XT_intercept_left[400], calibrations_XT_intercept_right[400], calibrations_Pedestals_ped[400];
+<   float calibrations_Pedestals_rms[400], calibrations_NoiseMatrix_33[400], calibrations_NoiseMatrix_34[400];
+<   float calibrations_NoiseMatrix_35[400], calibrations_NoiseMatrix_44[400], calibrations_NoiseMatrix_45[400];
+<   float calibrations_NoiseMatrix_46[400], calibrations_NoiseMatrix_55[400], calibrations_NoiseMatrix_56[400];
+<   float calibrations_NoiseMatrix_57[400], calibrations_NoiseMatrix_66[400], calibrations_NoiseMatrix_67[400];
+<   float calibrations_NoiseMatrix_77[400];
+---
+>   double calibrations_Gain_slope[400], calibrations_XT_slope_left[400], calibrations_XT_slope_right[400];
+>   double calibrations_XT_intercept_left[400], calibrations_XT_intercept_right[400], calibrations_Pedestals_ped[400];
+>   double calibrations_Pedestals_rms[400], calibrations_NoiseMatrix_33[400], calibrations_NoiseMatrix_34[400];
+>   double calibrations_NoiseMatrix_35[400], calibrations_NoiseMatrix_44[400], calibrations_NoiseMatrix_45[400];
+>   double calibrations_NoiseMatrix_46[400], calibrations_NoiseMatrix_55[400], calibrations_NoiseMatrix_56[400];
+>   double calibrations_NoiseMatrix_57[400], calibrations_NoiseMatrix_66[400], calibrations_NoiseMatrix_67[400];
+>   double calibrations_NoiseMatrix_77[400];
+422,424c421,423
+<   float nonAssocRecHits_globalX[10000], nonAssocRecHits_globalY[10000], nonAssocRecHits_localX[10000];
+<   float nonAssocRecHits_localY[10000], nonAssocRecHits_sumQ[10000], nonAssocRecHits_ratioSumQ[10000];
+<   float nonAssocRecHits_Time[10000],  nonAssocRecHits_distToGoodRH[10000];
+---
+>   double nonAssocRecHits_globalX[10000], nonAssocRecHits_globalY[10000], nonAssocRecHits_localX[10000];
+>   double nonAssocRecHits_localY[10000], nonAssocRecHits_sumQ[10000], nonAssocRecHits_ratioSumQ[10000];
+>   double nonAssocRecHits_Time[10000],  nonAssocRecHits_distToGoodRH[10000];
+431,433c430,432
+<   float assocRecHits_globalX[10000], assocRecHits_globalY[10000], assocRecHits_localX[10000];
+<   float assocRecHits_localY[10000], assocRecHits_sumQ[10000], assocRecHits_ratioSumQ[10000];
+<   float assocRecHits_Time[10000];
+---
+>   double assocRecHits_globalX[10000], assocRecHits_globalY[10000], assocRecHits_localX[10000];
+>   double assocRecHits_localY[10000], assocRecHits_sumQ[10000], assocRecHits_ratioSumQ[10000];
+>   double assocRecHits_Time[10000];
+440c439
+<   float gasGain_ADC3x3Sum[10000];
+---
+>   double gasGain_ADC3x3Sum[10000];
+495c494
+< //delete tree; 
+---
+>  
+506a506
+> 
+523d522
+< 
+533,534d531
+< 
+< 
+539d535
+< 
+579d574
+< 
+611a607
+> 
+629,631c625
+< 
+<    if((addRecHits && recHits2D_nRecHits2D > 0 && (isFullRECO || isLocalRECO) ) || !addRecHits) {tree->Fill();}
+< 
+---
+>    if((addRecHits && recHits2D_nRecHits2D > 0 && (isFullRECO || isLocalRECO) ) || !addRecHits) tree->Fill();
+649c643
+< 
+---
+>    
+661,662d654
+< 
+< 
+801,802c793,794
+<       std::vector<float> cscSegmentRecord_nRecHits, cscSegmentRecord_ring, cscSegmentRecord_station, cscSegmentRecord_chamber, cscSegmentRecord_endcap;
+<       std::vector<float> cscSegmentRecord_localY, cscSegmentRecord_localX, cscSegmentRecord_theta;
+---
+>       std::vector<double> cscSegmentRecord_nRecHits, cscSegmentRecord_ring, cscSegmentRecord_station, cscSegmentRecord_chamber, cscSegmentRecord_endcap;
+>       std::vector<double> cscSegmentRecord_localY, cscSegmentRecord_localX, cscSegmentRecord_theta;
+807c799
+< 	  muons_globalTrackNormalizedChi2[counter] = (float)mu->globalTrack()->chi2()/mu->globalTrack()->ndof();
+---
+> 	  muons_globalTrackNormalizedChi2[counter] = (double)mu->globalTrack()->chi2()/mu->globalTrack()->ndof();
+950d941
+< cout << "nMuons: " << counter << endl;
+1028,1029c1019,1020
+< 	 float xTolerance = 0.05;
+< 	 float yTolerance = 0.10;
+---
+> 	 double xTolerance = 0.05;
+> 	 double yTolerance = 0.10;
+1132,1133c1123,1124
+<      //float rHSumQ = 0;
+<      //float sumsides=0.;
+---
+>      //double rHSumQ = 0;
+>      //double sumsides=0.;
+1222c1213
+< //cout << "nRH: " << counter << endl;
+---
+> 
+1320,1321c1311,1312
+<      std::vector<float> recHitRecord_localX, recHitRecord_localY;
+<      std::vector<float> recHitRecord_layer, recHitRecord_chamber, recHitRecord_station, recHitRecord_ring, recHitRecord_endcap;
+---
+>      std::vector<double> recHitRecord_localX, recHitRecord_localY;
+>      std::vector<double> recHitRecord_layer, recHitRecord_chamber, recHitRecord_station, recHitRecord_ring, recHitRecord_endcap;
+1335c1326
+<      //float chisqProb = ChiSquaredProbability( (float)chisq, nDOF );
+---
+>      //double chisqProb = ChiSquaredProbability( (double)chisq, nDOF );
+1411c1402
+< 	 float distToIP = sqrt(globalPosition.x()*globalPosition.x()+globalPosition.y()*globalPosition.y()+globalPosition.z()*globalPosition.z());
+---
+> 	 double distToIP = sqrt(globalPosition.x()*globalPosition.x()+globalPosition.y()*globalPosition.y()+globalPosition.z()*globalPosition.z());
+1436c1427
+< //cout << "nSeg: " << counter << endl;
+---
+> 
+1864c1855
+< //cout << "nStrip: "   << nStripsFired << endl;
+---
+>   
+1907c1898
+< //cout << "nwire: " << nWireGroupsTotal << endl;
+---
+>   
+2653,2659c2644,2650
+<   float yUp = layerBounds[3] + y_center;
+<   float yDown = - layerBounds[3] + y_center;
+<   float xBound1Shifted = layerBounds[0] - shiftFromEdge;//
+<   float xBound2Shifted = layerBounds[1] - shiftFromEdge;//
+<   float lineSlope = (yUp - yDown)/(xBound2Shifted-xBound1Shifted);
+<   float lineConst = yUp - lineSlope*xBound2Shifted;
+<   float yBorder =  lineSlope*abs(localPos.x()) + lineConst;
+---
+>   double yUp = layerBounds[3] + y_center;
+>   double yDown = - layerBounds[3] + y_center;
+>   double xBound1Shifted = layerBounds[0] - shiftFromEdge;//
+>   double xBound2Shifted = layerBounds[1] - shiftFromEdge;//
+>   double lineSlope = (yUp - yDown)/(xBound2Shifted-xBound1Shifted);
+>   double lineConst = yUp - lineSlope*xBound2Shifted;
+>   double yBorder =  lineSlope*abs(localPos.x()) + lineConst;
+2909c2900
+< //  tree->Branch("vertex_nVertex",&vertex_nVertex,"vertex_nVertex/I");
+---
+>   tree->Branch("vertex_nVertex",&vertex_nVertex,"vertex_nVertex/I");
+2912d2902
+< /*
+2929a2920
+> 
+2948c2939
+< */
+---
+> 
+3069a3061,3062
+>  
+> 
+3072d3064
+< /*
+3082a3075
+> 
+3278c3271,3272
+< */
+---
+> 
+> 
